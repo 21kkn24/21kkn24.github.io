@@ -15,9 +15,9 @@
 <div class="container mt-5">
     <div class="jumbotron">
         <h1 class="display-4"> Witamy na stronie konferencji!</h1>
-        <p class="lead">To jest międzynarodowa platforma dla naukowców, studentów i profesjonalistów do dzielenia się wiedzą i postępami w swoich dziedzinach.</p>
+        <p class="lead">    </p>
         <hr class="my-4">
-        <p>Zarejestruj się teraz, aby być częścią tego wyjątkowego wydarzenia!.</p>
+	<p>Zarejestruj się teraz, aby być częścią tego wyjątkowego wydarzenia!. </br> Poniżej znajduje się odnośnik do strony rejestracyjnej na konferencję. Po utworzeniu konta,  </br>będzie można przejść proces rejstracji  oraz znaleźć  wszelkie potrzebne informacje.</p>
         <a class="btn btn-primary btn-lg" href="https://docs.google.com/forms/d/e/1FAIpQLSdmj-f9IEOmCjz6ZrPYtZ_6wGhoyVvRiLrXuwOXqFyIhyrjZw/viewform?usp=sf_link" role="button">Zarejestruj się</a>
     </div>
 
@@ -28,7 +28,7 @@
                     <img src="program.jpg" class="card-img-top" alt="Program Konferencji">
                     <div class="card-body">
                         <h5 class="card-title">Program Konferencji</h5>
-                        <p class="card-text">Zobacz program konferencji.</p>
+                        <p class="card-text">  </p>
                         <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#conferenceProgramModal">Więcej informacji</a>
                     </div>
                 </div>
@@ -38,7 +38,7 @@
                     <img src="program.jpg" class="card-img-top" alt="Program Konferencji">
                     <div class="card-body">
                         <h5 class="card-title">Opłaty konferencyjne</h5>
-                        <p class="card-text">Zobacz program konferencji.</p>
+                        <p class="card-text"> </p>
                         <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#payment">Więcej informacji</a>
                     </div>
                 </div>
@@ -48,8 +48,8 @@
                     <img src="program.jpg" class="card-img-top" alt="Program Konferencji">
                     <div class="card-body">
                         <h5 class="card-title">Ważne daty</h5>
-                        <p class="card-text">Zobacz program konferencji.</p>
-                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#conferenceProgramModal">Więcej informacji</a>
+                        <p class="card-text"> </p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#dates">Więcej informacji</a>
                     </div>
                 </div>
             </div>
@@ -66,7 +66,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    Program konferencji <br> Tu jest program konferencji
+                    Program konferencji będzie dostępny na stronie z formularzem rejestracyjnym. 
                 </div>
             </div>
         </div>
@@ -84,19 +84,41 @@
                 <div class="modal-body">
                     <ul class="list-group">
                         <li class="list-group-item active" aria-current="true"><b>Opłaty konferencyjne</b></li>
-                        <li class="list-group-item">Opłata wczesna konferencyjna ("early bird"): 1500 PLN</li>
-                         <li class="list-group-item">Opłata późna konferencyjna: 1800 PLN</li>
+                        <li class="list-group-item">Opłata wczesna konferencyjna do 20 lipca ("early bird"): 1500 PLN</li>
+                         <li class="list-group-item">Opłata konferencyjna po 20 lipca: 1800 PLN</li>
                     </ul>
                     <p class="mt-3">Opłaty konferencyjne obejmują: uczestnictwo w konferencji, materiały konferencyjne, obiad, kolację, kawę, przerwy kawowe, kolację bankietową, wycieczkę, transport z lotniska do hotelu i z powrotem.</p>
-                    <p>* Opcjonalne - ceny zostały wynegocjowane dla uczestników konferencji. W przypadku gdy w którymkolwiek dniu konferncji
-                    cena za dobę będzie w promocyjnej niższej cenie, hotel wyrówna ją do ceny niższej.</p>
+                    <!--- <p>* Opcjonalne - ceny zostały wynegocjowane dla uczestników konferencji. W przypadku gdy w którymkolwiek dniu konferncji
+			    cena za dobę będzie w promocyjnej niższej cenie, hotel wyrówna ją do ceny niższej.</p>-->
                 </div>
             </div>
         </div>
     </div>
 
 
-
+    <div class="modal fade" id="dates" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel"> Ważne daty</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-group">
+                        <li class="list-group-item active" aria-current="true"><b> Terminy:</b></li>
+                        <li class="list-group-item">Wczesna opłata rejestracyjna - do 20 lipca ("early bird")</li>
+                         <li class="list-group-item"> Termin rejestracji - 8.09.2024  </li>
+                    </ul>
+                    <p class="mt-3">               </p>
+                    <!--- <p>* Opcjonalne - ceny zostały wynegocjowane dla uczestników konferencji. W przypadku gdy w którymkolwiek dniu konferncji
+			    cena za dobę będzie w promocyjnej niższej cenie, hotel wyrówna ją do ceny niższej.</p>-->
+                </div>
+            </div>
+        </div>
+    </div>
+<!---
     <div class="container" id="comittee">
         <h2 class="text-center mt-5">Komitet Organizacyjny</h2>
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -106,7 +128,6 @@
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-                <!-- Carousel Item 1 -->
                 <div class="carousel-item active">
                     <div class="d-flex justify-content-center">
                         <div class="speaker">
@@ -123,7 +144,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Powtórzenie dla kolejnych itemów... -->
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -136,11 +156,36 @@
         </div>
     </div>
 
+    --->
+
+    <div class="container" id="organisers">
+        <h2 class="text-center mt-5">Komitet organizacyjny</h2>
+        <div class="row justify-content-center mt-5">
+            <div class="col-3 d-flex flex-column align-items-center" style="text-align=center;">
+<ul>
+  <li>Józef Spałek</li>
+  <li>Danuta Goc-Jagło</li>
+  <li>Maciej Fidrysiak</li>
+  <li>Maciej Hendzel</li>
+  <li>Piotr Kuterba</li>
+</ul>
+     </div>
+    </div>
 
 
     <div class="container" id="organisers">
         <h2 class="text-center mt-5">Organizatorzy</h2>
-        <div class="row mt-5">
+        <div class="row justify-content-center mt-5">
+            <div class="col-3 d-flex flex-column align-items-center" style="text-align=center;">
+                <img src="uj.jpg" class="img-fluid" alt="Organizator 1" style="width: 100px; height: 150px;">
+                <p class="text-center mt-2"><b>Uniwersytet Jagielloński</b></p>
+            </div>
+    </div>
+
+
+    <div class="container" id="patroni">
+        <h2 class="text-center mt-5">Patroni</h2>
+        <div class="row mt-5 justify-content-center">
             <div class="col-3 d-flex flex-column align-items-center">
                 <img src="uj.jpg" class="img-fluid" alt="Organizator 1" style="width: 100px; height: 150px;">
                 <p class="text-center mt-2"><b>Uniwersytet Jagielloński</b></p>
@@ -157,11 +202,11 @@
 
 
 
-        <footer class="text-center text-lg-start bg-light text-muted">
+        <footer class="text-center text-lg-start bg-light text-muted justify-content-center">
             <!-- Sekcja kontaktowa -->
-            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <section class="d-flex justify-content-center ">
                 <div>
-                    <span><strong>Miejsce konferencji:</strong> Hotel XY przy ul. Konferencyjna 12, 00-001 Kraków</span>
+			<span><strong> </br> Miejsce konferencji:</strong> Wydział Fizyki, Astronomii i Informatyki Stosowanej,</br> ul. prof. Stanisława Łojasiewicza 11 30-348 Kraków</span>
                 </div>
             </section>
 
