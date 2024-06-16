@@ -20,14 +20,52 @@
         <button class="btn btn-outline-light ml-3" onclick="toggleLanguage('en')">EN</button>
     </nav>
     <div class="container mt-5">
-        <div class="jumbotron">
-            <h1 class="display-4" data-lang data-lang-pl="XXI Krajowa Konferencja Nadprzewodnictwa" data-lang-en="XXI National Conference on Superconductivity"></h1>
-            <hr class="my-4">
-            <h3 data-lang data-lang-pl="Odnośnik umożliwiający rejestrację i zgłaszanie streszczeń udostępniony zostanie w tym miejscu 17. czerwca 2024." data-lang-en="The registration and abstract submission link will be available here on June 17, 2024."></h3>
-            <div class="text-center mt-4">
-                <a href="#contact-section" class="btn btn-primary btn-lg" data-lang data-lang-pl="Kontakt" data-lang-en="Contact"></a>
-            </div>
-        </div>
+<div class="jumbotron">
+    <h1 class="display-4" data-lang data-lang-pl="XXI Krajowa Konferencja Nadprzewodnictwa" data-lang-en="XXI National Conference on Superconductivity"></h1>
+    <hr class="my-4">
+    <h3 class="text-center" data-lang data-lang-pl="<b> Rejestracja otwarta.</b><br> <b> Uwaga</b>: wymagane jest założenie konta w systemie Indico WFAIS UJ, które umożliwia rejestrację, a także przesyłanie i edycję streszczeń." data-lang-en="<b> Registration is now open </b>. <br><b>Note</b>: creating a user account in Indico WFAIS UJ system is required to complete registration, as well as to submit and edit your abstract."></h3>
+    <div class="button-container mt-4">
+        <a href="https://indico.fais.uj.edu.pl/event/2/" class="btn btn-primary btn-lg" data-lang data-lang-pl="Strona rejestracji" data-lang-en="Registration page"></a>
+        <a href="#contact-section" class="btn btn-secondary btn-lg" data-lang data-lang-pl="Kontakt" data-lang-en="Contact"></a>
+    </div>
+</div>
+
+<style>
+    .button-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .btn {
+        transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .btn:hover {
+        transform: scale(1.1);
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+    }
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+        border-color: #004085;
+    }
+
+    .btn-secondary {
+        background-color: #6c757d;
+        border-color: #6c757d;
+    }
+
+    .btn-secondary:hover {
+        background-color: #5a6268;
+        border-color: #545b62;
+    }
+</style>
 
         <div class="container">
             <div class="row">
