@@ -12,6 +12,30 @@
             elements.forEach(el => el.innerHTML = el.getAttribute('data-lang-' + lang));
         }
     </script>
+    <style>
+        .thumbnail-img {
+            max-width: 250px;
+            margin: 0 auto;
+            display: block;
+            cursor: pointer;
+        }
+        .poster-section {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .poster-section h3 {
+            margin-bottom: 20px;
+        }
+        .poster-card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .btn-download {
+            margin-top: 20px;
+        }
+    </style>    
 </head>
 <body onload="toggleLanguage('pl')">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -51,6 +75,7 @@ materials."></p>
     <div class="button-container mt-4">
         <a href="https://indico.fais.uj.edu.pl/event/2/" class="btn btn-primary btn-lg" data-lang data-lang-pl="Strona rejestracji" data-lang-en="Registration page"></a>
         <a href="#contact-section" class="btn btn-secondary btn-lg" data-lang data-lang-pl="Kontakt" data-lang-en="Contact"></a>
+	<a href="#poster-section" class="btn btn-secondary btn-lg" data-lang data-lang-pl="Plakat" data-lang-en="Poster">Plakat</a>
     </div>
 </div>
 
@@ -244,8 +269,21 @@ materials."></p>
                 </div>
             </div>
         </div>
+        
+  <!-- New Section for Poster Thumbnail -->
+            <div class="row poster-section" id="poster-section">
+                <div class="col-md-12">
+                    <div class="poster-card">
+                        <h3 data-lang data-lang-pl="Plakat konferencyjny" data-lang-en="Conference Poster"></h3>
+                        <a href="platkat5.pdf" download>
+                            <img src="thumbnail.jpg" class="thumbnail-img" alt="Poster Thumbnail">
+                        </a>
+                        <a href="plakat.pdf" class="btn btn-primary btn-download" download data-lang data-lang-pl="Pobierz pełną wersję" data-lang-en="Download Full Version"></a>
+                    </div>
+                </div>
+            </div>
 
-        <div class="container" id="organisers">
+	<div class="container" id="organisers">
             <h2 class="text-center mt-5" data-lang data-lang-pl="Organizatorzy" data-lang-en="Organizers"></h2>
             <div class="row justify-content-center mt-5">
                 <div class="col-3 d-flex flex-column align-items-center">
