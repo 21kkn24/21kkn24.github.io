@@ -124,7 +124,7 @@ materials."></p>
                         <img src="cracow.jpg" class="card-img-top" alt="Program Konferencji">
                         <div class="card-body">
                             <h5 class="card-title" data-lang data-lang-pl="Program Konferencji" data-lang-en="Conference Program"></h5>
-                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#conferenceProgramModal" data-lang data-lang-pl="Więcej informacji" data-lang-en="More Information"></a>
+                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#pdfModal" data-lang data-lang-pl="Więcej informacji" data-lang-en="More Information"></a>
                         </div>
                     </div>
                 </div>
@@ -160,20 +160,22 @@ materials."></p>
             </div>
         </div>
 
-        <div class="modal fade" id="conferenceProgramModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modalLabel" data-lang data-lang-pl="Program Konferencji" data-lang-en="Conference Program"></h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body" data-lang data-lang-pl="Program konferencji będzie dostępny na stronie z formularzem rejestracyjnym." data-lang-en="The conference program will be available in the registration portal."></div>
-                </div>
+<div class="modal fade" id="pdfModal" tabindex="-1" role="dialog" aria-labelledby="pdfModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="pdfModalLabel" data-lang data-lang-pl="Program Konferencji" data-lang-en="Conference Program"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" style="height: 80vh; overflow-y: hidden;">
+                <!-- Embed the PDF using iframe -->
+                <iframe src="Program_KKN21.pdf" width="100%" height="100%" style="border:none; height: 100%;"></iframe>
             </div>
         </div>
-
+    </div>
+</div>
         <div class="modal fade" id="payment" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -284,33 +286,36 @@ materials."></p>
                     </div>
                 </div>
             </div>
- <!-- New Section for Poster Thumbnail -->
-            <div class="row poster-section" id="program-section">
-                <div class="col-md-12">
-                    <div class="poster-card">
-                        <h3 data-lang data-lang-pl="Program konferencji" data-lang-en="Conference Program"></h3>
-                        <a href="Program_KKN21.pdf" download>
-                            <img src="thumbnail1.jpg" class="thumbnail-img" alt="Poster Thumbnail">
-                        </a>
-			<!--<a href="./plakat.pdf" class="btn btn-primary btn-download" download data-lang data-lang-pl="Pobierz pełną wersję" data-lang-en="Download Full Version"></a>-->
-                    </div>
-                </div>
-            </div>
-
-
-	<div class="container" id="organisers">
-            <h2 class="text-center mt-5" data-lang data-lang-pl="Organizatorzy" data-lang-en="Organizers"></h2>
-            <div class="row justify-content-center mt-5">
-                <div class="col-3 d-flex flex-column align-items-center">
-                    <img src="uj.jpg" class="img-fluid" alt="Organizator 1" style="width: 100px; height: 150px;">
-                    <p class="text-center mt-2"><b data-lang data-lang-pl="Uniwersytet Jagielloński" data-lang-en="Jagiellonian University"></b></p>
-                </div>
-                <div class="col-3 d-flex flex-column align-items-center">
-                    <img src="agh.jpg" class="img-fluid" alt="Organizator 2" style="width: 100px; height: 150px;">
-                    <p class="text-center mt-2"><b data-lang data-lang-pl="Akademia Górniczo-Hutnicza" data-lang-en="AGH University of Science and Technology"></b></p>
-                </div>
-	    </div>
+<!-- Section for Poster Thumbnail -->
+<div class="row poster-section" id="program-section">
+    <div class="col-md-12">
+        <div class="poster-card">
+            <h3 data-lang data-lang-pl="Program konferencji" data-lang-en="Conference Program"></h3>
+            <!-- Trigger for the modal -->
+            <a href="#" data-toggle="modal" data-target="#pdfModal">
+                <img src="thumbnail1.jpg" class="thumbnail-img" alt="Program Thumbnail">
+            </a>
         </div>
+    </div>
+</div>
+
+<!-- Modal for Displaying PDF -->
+<div class="modal fade" id="pdfModal" tabindex="-1" role="dialog" aria-labelledby="pdfModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document"> <!-- Changed to 'modal-xl' for extra-large width -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="pdfModalLabel" data-lang data-lang-pl="Program Konferencji" data-lang-en="Conference Program"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" style="height: 80vh; overflow-y: hidden;"> <!-- Increased height and disabled vertical overflow -->
+                <!-- Embed the PDF using iframe -->
+                <iframe src="Program_KKN21.pdf" width="100%" height="100%" style="border:none; height: 100%;"></iframe> <!-- Adjusted iframe height -->
+            </div>
+        </div>
+    </div>
+</div>
 
         <div class="container" id="patroni">
             <h2 class="text-center mt-5" data-lang data-lang-pl="Patroni" data-lang-en="Patrons"></h2>
