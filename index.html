@@ -12,6 +12,14 @@
             elements.forEach(el => el.innerHTML = el.getAttribute('data-lang-' + lang));
         }
     </script>
+<style>
+    .popover {
+        max-width: none; /* Allows the popover to be as wide as the content */
+    }
+    .popover-body {
+        padding: 0; /* Removes padding around the image */
+    }
+</style>
     <style>
         .thumbnail-img {
             max-width: 250px;
@@ -71,7 +79,49 @@ materials."></p>
                             <li  data-lang data-lang-pl="zastosowania konwencjonalnych i egzotycznych nadprzewodników" data-lang-en="applications of conventional and exotic superconductors"></li>
                         </ul>
 
-    <h4 class="text-center" data-lang data-lang-pl="<b> Rejestracja otwarta.</b><br> <b> Uwaga</b>: wymagane jest założenie konta w systemie Indico WFAIS UJ, które umożliwia rejestrację, a także przesyłanie i edycję streszczeń." data-lang-en="<b> Registration is now open </b>. <br><b>Note</b>: creating a user account in Indico WFAIS UJ system is required to complete registration, as well as to submit and edit your abstract."></h4>
+<!-- New buttons for Book of Abstracts, Book of Abstracts Cover, and Program -->
+<div class="button-container mt-4">
+    <!-- Book of Abstracts Button -->
+    <a href="KKN21_Book_of_abstracts.pdf"
+       class="btn btn-primary btn-lg"
+       data-lang
+       data-lang-pl="Książka streszczeń"
+       data-lang-en="Book of Abstracts"
+       data-toggle="popover"
+       data-trigger="hover"
+       data-placement="top"
+       data-html="true"
+       data-content="<img src='KKN21_Book_of_abstracts_thumbnail.jpg' width='400' alt='Book of Abstracts Thumbnail'>">
+    </a>
+    
+    <!-- Book of Abstracts Cover Button -->
+    <a href="KKN21_Book_of_abstracts_Cover.pdf"
+       class="btn btn-primary btn-lg"
+       data-lang
+       data-lang-pl="Okładka książki streszczeń"
+       data-lang-en="Book of Abstracts Cover"
+       data-toggle="popover"
+       data-trigger="hover"
+       data-placement="top"
+       data-html="true"
+       data-content="<img src='KKN21_Cover_thumbnail.jpg' width='400' alt='Book of Abstracts Cover Thumbnail'>">
+    </a>
+    
+    <!-- Program Button -->
+    <a href="Program_KKN21.pdf"
+       class="btn btn-primary btn-lg"
+       data-lang
+       data-lang-pl="Program"
+       data-lang-en="Program"
+       data-toggle="popover"
+       data-trigger="hover"
+       data-placement="top"
+       data-html="true"
+       data-content="<img src='program_thumbnail.jpg' width='400' alt='Program Thumbnail'>">
+    </a>
+</div>
+
+</h4>
     <div class="button-container mt-4">
         <a href="https://indico.fais.uj.edu.pl/event/2/" class="btn btn-primary btn-lg" data-lang data-lang-pl="Strona rejestracji" data-lang-en="Registration page"></a>
         <a href="#contact-section" class="btn btn-secondary btn-lg" data-lang data-lang-pl="Kontakt" data-lang-en="Contact"></a>
@@ -259,16 +309,16 @@ materials."></p>
                 <div id="contact-section" class="col-3 d-flex flex-column align-items-center" style="text-align: center;">
                     <ul class="list-unstyled">
                         <li>Józef Spałek</li>
-			<li>Adam Rycerz</li>
-                        <li>Danuta Goc-Jagło</li>
+			<li>Danuta Goc-Jagło</li>
                         <li>Maciej Fidrysiak</li>
-                        <li>Maciej Hendzel</li>
-                        <li>Agata Kubisiak</li>
-                        <li>Piotr Kuterba</li>
+			<li>Piotr Kuterba</li>
                         <li>Andrzej Kądzielawa</li>
+                        <li>Maciej Hendzel</li>
+                        <li>Adam Rycerz</li>
+                        <li>Agata Kubisiak</li>
                         <li>Michał Zegrodnik</li>
-                        <li>Andrzej Biborski</li>
                         <li>Damian Rybicki</li>
+                        <li>Andrzej Biborski</li>
                         <li><strong data-lang data-lang-pl="Kontakt: <a href='mailto:21kkn@uj.edu.pl'>21kkn@uj.edu.pl</a>" data-lang-en="Contact: <a href='mailto:21kkn@uj.edu.pl'>21kkn@uj.edu.pl</a>"></strong></li>
                     </ul>
                 </div>
@@ -399,10 +449,17 @@ materials."></p>
             </div>
         </div>
     </div>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.5/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<!-- Popper.js (Bootstrap 4 requires Popper.js 1.x) -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<!-- Bootstrap 4 JS -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+        $('[data-toggle="popover"]').popover();
+    });
+</script>
 </body>
 </html>
 
